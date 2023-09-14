@@ -415,4 +415,5 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 @import '../assets/plugins/morrisjs/morris.css';
+@import '../assets/css/admin-style.css';
 </style>
