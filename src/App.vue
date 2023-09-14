@@ -1,18 +1,12 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App testing "/>
-</template>
+<script setup>
+//import HelloWorld from './components/HelloWorld.vue'
+import AdminPage from './components/AdminDashboard.vue'
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
 </script>
+<template>
+  <AdminPage/>
+  
+</template>
 
 <style>
 #app {
