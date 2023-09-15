@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <section>
+  
     <aside id="leftsidebar" class="sidebar">
         <div class="user-info">
             <div class="admin-image"> <img src="/assets/images/random-avatar7.jpg" alt=""> </div>
@@ -32,63 +32,7 @@
             <ul class="list">
                 <li class="header">MAIN NAVIGATION</li>
                 <li class="side_link_parent"> <a href="/admin/dashboard"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
-                @role('Staff')
-                <li class="side_link_parent"> <a href="#" class="menu-toggle"><i class="zmdi zmdi-calendar-check"></i><span>Appointment</span> </a>
-                    <ul class="ml-menu">
-                        <li class="side_link"> <a href="/admin/all-appointment">All Appointment</a></li>
-                        <li class="side_link"> <a href="/admin/doctor-schedule">Doctor Schedule</a></li>
-                        <li class="side_link"> <a href="/admin/appointment">Create Appointment</a></li>
-                        <li class="side_link"> <a href="{{ route('admin.appointment.excancels') }}">Excessive Cancels</a></li>
-                    </ul>
-                </li>
-                <li class="side_link_parent"> <a href="#" class="menu-toggle"><i class="zmdi zmdi-account-add"></i><span>Doctors</span> </a>
-                    <ul class="ml-menu">
-                        <li class="side_link"> <a href="/admin/doctor">All Doctors</a></li>
-                        <li class="side_link"> <a href="/admin/doctor/create">Add Doctor</a></li>
-                    </ul>
-                </li>
-                <li class="side_link_parent"> <a href="#" class="menu-toggle"><i class="zmdi zmdi-account-o"></i><span>Patients</span> </a>
-                    <ul class="ml-menu">
-                        <li class="side_link"> <a href="/admin/patient">All Patients</a></li>
-                        <li class="side_link"> <a href="#">Patient Invoice</a></li>
-                    </ul>
-                </li>
-                <li class="side_link_parent"> <a href="#" class="menu-toggle"><i class="zmdi zmdi-balance-wallet"></i><span>Payments</span> </a>
-                    <ul class="ml-menu">
-                        <li class="side_link"> <a href="/admin/payment">Payments</a></li>
-                        <li class="side_link"> <a href="/admin/payment/add-payment">Add Payment</a></li>
-                        <li class="side_link"> <a href="/admin/payment/patient-invoice">Patient Invoice</a></li>
-                    </ul>
-                </li>
-                <li class="side_link_parent"> <a href="#" class="menu-toggle"><i class="zmdi zmdi-edit"></i><span>Blog posts</span> </a>
-                    <ul class="ml-menu">
-                        <li class="side_link"> <a href="{{route('blog.create')}}">Add a blog post</a></li>
-                        <li class="side_link"> <a href="{{route('blog.index')}}">Manage blog posts</a></li>
-                    </ul>
-                </li>
-                <li class="side_link_parent"> <a href="#" class="menu-toggle"><i class="zmdi zmdi-help"></i><span>FAQs</span> </a>
-                    <ul class="ml-menu">
-                        <li class="side_link"> <a href="/admin/faq">All FAQs</a></li>
-                        <li class="side_link"> <a href="/admin/faq/add-faq">Add FAQ</a></li>
-                    </ul>
-                </li>
-                <li class="side_link_parent"><a href="/admin/report"><i class="zmdi zmdi-file-text"></i><span>Reports</span></a></li>
-                <li class="side_link_parent"><a href="/admin/widgets"><i class="zmdi zmdi-delicious"></i><span>Widgets</span></a></li>
-                <li class="side_link_parent"> <a href="#" class="menu-toggle"><i class="zmdi zmdi-copy"></i><span>Extra Pages</span> </a>
-                    <ul class="ml-menu">
-                        <li class="side_link"> <a href="#">Sign In</a> </li>
-                        <li class="side_link"> <a href="#">Sign Up</a> </li>
-                        <li class="side_link"> <a href="#">Forgot Password</a> </li>
-                        <li class="side_link"> <a href="#">Page 404</a> </li>
-                        <li class="side_link"> <a href="#">Page 500</a> </li>
-                        <li class="side_link"> <a href="#">Page Offline</a> </li>
-                        <li class="side_link"> <a href="#">Locked Screen</a> </li>
-                        <li class="side_link"> <a href="#">Blank Page</a> </li>
-                    </ul>
-                </li>
-                @endrole
 
-                @role('Super-Admin')
                 <li class="header">SUPER ADMIN SECTION</li>
                 <li class="side_link_parent"> <a href="#" class="menu-toggle"><i class="zmdi zmdi-accounts-alt"></i><span>User Management</span> </a>
                     <ul class="ml-menu">
@@ -103,7 +47,7 @@
                     </ul>
                 </li>
                 <li class="side_link_parent"><a href="/admin/permissions"><i class="zmdi zmdi-shield-security"></i><span>Permissions</span></a></li>
-                @endrole
+         
                 <li class="header">LABELS</li>
                 <li class="side_link_parent"> <a href="#"><i class="zmdi zmdi-chart-donut col-red"></i><span>Important</span> </a> </li>
                 <li class="side_link_parent"> <a href="#"><i class="zmdi zmdi-chart-donut col-amber"></i><span>Warning</span> </a> </li>
@@ -294,7 +238,7 @@
             </div>
         </div>
     </aside>
-</section>
+
 </template>
 
 <style scoped>

@@ -22,12 +22,9 @@
             <div class="navbar-header">
                 <a href="#" class="bars"></a>
                 <!-- if Auth logined then show this -->
-                @if (Auth::check())
                 <a class="navbar-brand" href="/admin">Admin Dashboard</a>
-                @endif
             </div>
             <ul class="nav navbar-nav navbar-right">
-
                 <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="zmdi zmdi-notifications"></i> <span class="label-count">7</span> </a>
                     <ul class="dropdown-menu">
                         <li class="header">NOTIFICATIONS</li>
