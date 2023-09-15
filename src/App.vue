@@ -1,10 +1,10 @@
 <script setup>
 //import HelloWorld from './components/HelloWorld.vue'
-import AdminPage from './components/AdminDashboard.vue'
-
+//import AdminPage from './components/AdminDashboard.vue'
+import AdminMainPage from './views/AdminPage.vue'
 </script>
 <template>
-  <AdminPage/>
+  <AdminMainPage/>
   
 </template>
 

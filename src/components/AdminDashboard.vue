@@ -23,7 +23,7 @@
                 <div class="info-box-4 hover-zoom-effect">
                     <div class="icon"> <i class="zmdi zmdi-account col-blue"></i> </div>
                     <div class="content">
-                        <div class="text">New Patient</div>
+                        <div class="text">Task</div>
                         <div class="number">27</div>
                     </div>
                 </div>
@@ -415,5 +415,4 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 @import '../assets/plugins/morrisjs/morris.css';
-@import '../assets/css/admin-style.css';
 </style>
